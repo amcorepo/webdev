@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>National Park Service | Home Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> 
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+    <body class="fadeIn">
+        <header>
+                <nav class="navbar navbar-dark max-width-boot">
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="National Parks Service's Logo" style="width:45px; height:48px;"/><span style="font-size: 1.8rem;">NPS</span></a>
+                        
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars" style="color:#fff;"></i>
+                    </button>
+                                        
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto text-center">
+                            <li class="nav-item active"><a class="nav-link" href="../midterm/home.html">Home<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="../midterm/park.html">Park</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../midterm/article.html">Article</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </header>
+
+        <section class="hero-section first-section"> <!-- OVERLAY NOT WORKING -->
+            <h1 class="aspect-ratio">
+                <video class="bg-video" width="100%" height="100%" autoplay loop muted>
+                    <source src="../midterm/videos/hero_video.mp4" type="video/mp4">
+                </video>
+                <div class="aspect-ratio-inner">
+                    <div class="flexbox-center">
+                        <div class="viewport-sizing">
+                                National Park Service
+                        </div>
+                    </div>
+                </div>
+            </h1>   
+        </section>
+    
+        <section class="park-dropdown">
+            <div class="container">
+                <div class="row">
+                    <h3 class="col-12">Find A National Park</h3>
+                    <p class="col-12 text-left">Select A State</p>
+                    <div class="col-12 input-group mb-3">
+                        <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Select A State...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary mx-auto mb-4">Search</button>
+                </div>
+            </div>
+
+        </section>
+        <section class="flex-container activities">
+            <h2 class="move-away">Activities</h2>
+            <div class="flex-item flex-no1 flex-container">
+                <div class="caption-frame"><p class="caption-text">Watch Video</p></div>
+            </div>
+            <div class="flex-item flex-no2 flex-container">
+                <div class="caption-frame"> <p class="caption-text">Tools for Educators</p></div>
+            </div>
+            <div class="flex-item flex-no3 flex-container">
+                <div class="caption-frame"><p class="caption-text">Monitoring Mammals</p></div>
+            </div>
+            <div class="flex-item flex-no4 flex-container">
+                    <div class="caption-frame"><p class="caption-text">This Month's NPS Givaway</p></div>
+            </div>
+            <div class="flex-item flex-no5 flex-container">
+                    <div class="caption-frame"><p class="caption-text">Celebrating Hispanic Heritage</p></div>
+            </div>
+            <div class="flex-item flex-no6 flex-container">
+                    <div class="caption-frame"><p class="caption-text">National Park News</p></div>
+            </div>
+            <div class="flex-item flex-no7 flex-container">
+                    <div class="caption-frame"><p class="caption-text">Photos, Videos, Webcams & More</p></div>
+            </div>
+                
+        
+        </section>
+        <section class="stay-connected">
+            <div class="container">
+                <div class="row">
+                    <h3 class="col-12">Stay Connected</h3>
+                    <ul class="col-12 list-group list-group-flush">
+                        <li class="list-group-item border-top-0"><i class="fab fa-facebook"></i>Facebook</li>
+                        <li class="list-group-item"><i class="fab fa-twitter"></i>Twitter</li>
+                        <li class="list-group-item border-bottom-0"><i class="fab fa-instagram"></i>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="parks-list">
+            <div class="flex-container">
+                <div class="flex-item flex-no flex-container" style="flex: 0 0 100%;">
+                    <h3 class="">Popular Parks</h3>
+                </div>
+                <div class="flex-item flex-no1 flex-container">
+                    <div class="caption-frame"><p class="caption-text">Acadia</p></div>
+                </div>
+                <div class="flex-item flex-no2 flex-container">
+                    <div class="caption-frame"> <p class="caption-text">Arches</p></div>
+                </div>
+                <div class="flex-item flex-no3 flex-container">
+                    <div class="caption-frame"><p class="caption-text">Big Bend</p></div>
+                </div>
+                <div class="flex-item flex-no4 flex-container">
+                        <div class="caption-frame"><p class="caption-text">Black Canyon</p></div>
+                </div>
+                <div class="flex-item flex-no5 flex-container">
+                        <div class="caption-frame"><p class="caption-text">Bryce Canyon</p></div>
+                </div>
+                <div class="flex-item flex-no6 flex-container">
+                        <div class="caption-frame"><p class="caption-text">Cuyahoga</p></div>
+                </div>
+                <div class="flex-item flex-noSeven flex-container">
+                        <div class="caption-frame"><p class="caption-text">Glacier</p></div>
+                </div>
+                <div class="flex-item flex-no8 flex-container">
+                    <div class="caption-frame"><p class="caption-text">Grand Teton</p></div>
+                </div>
+                <div class="flex-item flex-no9 flex-container">
+                    <div class="caption-frame"> <p class="caption-text">Kenai Fjords</p></div>
+                </div>
+                <div class="flex-item flex-no10 flex-container">
+                    <div class="caption-frame"><p class="caption-text">Mount Rainier</p></div>
+                </div>
+                <div class="flex-item flex-no11 flex-container">
+                        <div class="caption-frame"><p class="caption-text">Rocky Mountain</p></div>
+                </div>
+                <div class="flex-item flex-no12 flex-container">
+                        <div class="caption-frame"><p class="caption-text">Sequoia</p></div>
+                </div>
+                <div class="flex-item flex-no13 flex-container">
+                        <div class="caption-frame"><p class="caption-text">Shenandoah</p></div>
+                </div>
+                <div class="flex-item flex-no14 flex-container">
+                        <div class="caption-frame"><p class="caption-text">Yellowstone</p></div>
+                </div>
+                <div class="flex-item flex-no15 flex-container">
+                        <div class="caption-frame"><p class="caption-text">Yosemite</p></div>
+                </div>
+                <div class="flex-item flex-no16 flex-container">
+                        <div class="caption-frame"><p class="caption-text">Zion</p></div>
+                </div>
+            </div>        
+        </section>
+        <audio autoplay>
+                <source src="../midterm/sound/owl.mp3" type="audio/mpeg">
+        </audio>
+        <footer class="flex-container">
+            <div class="flex-container">
+                <img src="images/footer_text.png" alt="Experience Your America TM" class="flex-item footer-title"/>
+                <hr>
+                <p class="footer-text">National Parks Service <br> U.S. Department o fthe Interior</p> 
+                <img src="images/logo.png" alt="National Park Service's Logo" class="flex-item footer-logo"/>
+            </div>
+        </footer>     
+    </body>
+</html>

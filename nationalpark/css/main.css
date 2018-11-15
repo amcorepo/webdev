@@ -1,0 +1,208 @@
+/* Final Tasks 
+
+2. Add 1 transition, 1 animation. 
+5. Organize HTMLs
+6. Push
+
+
+*/
+
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+/********** General CSS **********/
+.fadeIn {animation-duration: .5s; transition-timing-function: ease-in; animation-fill-mode: both; animation-name: fadeIn}
+/*Basic Page Rest*/
+html, body { margin:0; padding:0; min-height:100%; }
+/* Get rems to be more understandable */
+html {font-size:10px;}              
+/*Prevent Images From Overflowing Their Containers*/
+img { display:inline-block; vertical-align:middle; max-width:100%; }
+.wrapper {padding-bottom: 56.25%; }
+h1 {font-family: ‘Noto Serif’, serif;}
+p, a, h2, h3, h4, h5, li {font-family: ‘Segoe UI’, ‘OpenSans’, sans-serif}
+.first-section h1 {color: #fff; font-weight:700; font-size: 4vw; line-height: 33px; text-align:center; z-index:1;  white-space: nowrap; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);}
+.move-away {position:absolute; top:-9999px; right: -9999px;}
+section:last-of-type {margin-bottom:0;}
+/* Header */
+header {background-color: #121214}
+.logo {max-width: 35px; max-height:48px;}
+.navbar-brand { z-index:2;text-decoration: none; color:#fff; font-weight: 700; margin-left: 10px; font-family: ‘Segoe UI’, ‘OpenSans’, sans-serif;}
+button.navbar-toggler:focus {outline:none;}
+button.navbar-toggler {border:none;}
+.flex-container {display:flex; flex-wrap:wrap;}
+.navbar .container .flex-container {align-items:center;}
+.flex-item {flex: 0 0 auto;}
+nav a img {margin-right:10px;}
+.navbar-toggler {cursor:pointer;}
+i.fas.fa-bars {font-size:1.8rem;}
+/* Footer */ 
+footer .flex-container {flex-direction:column; justify-content:center; align-items: center; padding: 0 20px;}
+.footer-title {min-height:17px;}
+hr {min-height:1px; background-color:#fff; width:100%;}
+.footer-text {text-align:center; color:#fff; line-height:19px; font-size: 1.4rem;}
+.footer-logo {min-height: 106px; background-size:cover;}
+footer {background-color: #000; min-height:280px; align-items: center; justify-content:center;}
+ul.navbar-nav li.nav-item {font-size:1.8rem;}
+
+/********** Home CSS **********/                           
+section:not(.first-section) {padding: 0 10px; }
+section {margin-bottom:15px;}
+.hero-section h1 {background: #000 url('../images/home/hero_cover.jpg') no-repeat; background-size:cover; background-position:center;}
+/*.aspect-ratio::before {content:'';background: rgba(0, 0, 0, 0.35); position: absolute; height:100vh; width:100%;}*/
+.hero-section .aspect-ratio {position:relative; overflow: hidden; height:0; padding-top:56.25%;}
+.hero-section .aspect-ratio .aspect-ratio-inner {position:absolute; top:0; left:0; width:100%; height:100%; background: rgba(0, 0, 0, 0.35);}
+.flexbox-center {height:100%; display: flex; justify-content:center; align-items:center;}
+.viewport-sizing{font-size:5vw;}
+.park-dropdown {background-color:#F4F4F4;}
+ h3 {margin-bottom:20px; padding-top:20px; font-weight:700; text-align:center; font-size: 1.8rem;}
+.park-dropdown .container .row p {font-size: 1.6rem; line-height:24px; margin-bottom:0;}
+.park-dropdown .container .row .input-group {font-size: 1.6rem; line-height:24px;}
+.park-dropdown .container .row .input-group .custom-select {min-height:35px;}
+.activities .flex-no1 {background: url(../images/home/list_item_1.jpg) no-repeat; background-size: cover; min-height:194px;}
+.activities .flex-no2 {background: url(../images/home/list_item_2.jpg) no-repeat; background-size: cover; min-height:194px;}
+.activities .flex-no3 {background: url(../images/home/list_item_3.jpg) no-repeat; background-size: cover; min-height:194px;}
+.activities .flex-no4 {background: url(../images/home/list_item_4.jpg) no-repeat; background-size: cover; min-height:194px;}
+.activities .flex-no5 {background: url(../images/home/list_item_5.jpg) no-repeat; background-size: cover; min-height:194px;}
+.activities .flex-no6 {background: url(../images/home/list_item_6.jpg) no-repeat; background-size: cover; min-height:194px;}
+.activities .flex-no7 {background: url(../images/home/list_item_7.jpg) no-repeat; background-size: cover; min-height:194px;}
+.activities .flex-item .caption-frame {background: rgba(0, 0, 0, 0.8); text-align:left; color: #fff; min-height: 40px;} /* Darker background than mockups because not ADA compliant */
+.activities .flex-item.flex-container {flex-direction:column; justify-content:flex-end; flex-wrap:wrap; background-size:cover; background-position:center;}
+.activities .flex-item .caption-frame .caption-text {padding: 0 20px; margin: 10px 0; font-size: 1.6rem;}
+.fa-facebook {margin-right:10px; color: #3B5998;}
+.fa-twitter {margin-right:10px; color: #1DA1F2;}
+.fa-instagram {margin-right:10px; color: #E1306C;}
+ul.list-group{font-size:1.6rem; line-height:21px;}
+.parks-list .flex-container {justify-content: space-between;}
+.parks-list .flex-no1 {background: url(../images/home/acadia.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-no2 {background: url(../images/home/arches.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-no3 {background: url(../images/home/big_bend.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-no4 {background: url(../images/home/black_canyon.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-no5 {background: url(../images/home/bryce_canyon.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-no6 {background: url(../images/home/cuyahoga.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-noSeven {background: url(../images/home/glacier.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-no8 {background: url(../images/home/grand_teton.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-no9 {background: url(../images/home/kenai_fjords.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-no10 {background: url(../images/home/mount_rainier.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-no11 {background: url(../images/home/rocky_mountain.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-no12 {background: url(../images/home/sequoia.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-no13 {background: url(../images/home/shenandoah.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-no14 {background: url(../images/home/yellowstone.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-no15 {background: url(../images/home/yosemite.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-no16 {background: url(../images/home/zion.jpg) no-repeat; background-size: cover; min-height:157px;}
+.parks-list .flex-item .caption-frame {background: rgba(0, 0, 0, 0.8); text-align:center; color: #fff; min-height: 30px;} /* Darker background than mockups because not ADA compliant */
+.parks-list .flex-item.flex-container {flex-direction:column; justify-content:flex-end; flex-wrap:wrap;}
+.parks-list .flex-item .caption-frame .caption-text {padding: 0 20px; margin: 10px 0; font-size: 1.4rem;}
+.parks-list .flex-item.flex-container {margin-bottom: 20px;}
+.activities .flex-item {transition: .5s; transform: scale(1); box-shadow: 0px 0px 0px 0px #000; }
+.activities .flex-item:hover {z-index: 1; transform: scale(1.1); -webkit-transform: scale(1.1); box-shadow: 0px 1px 6px 1px #000; }
+
+/********** Park CSS **********/
+
+.park-hero {align-items: flex-end; justify-content:center; background: #000 url('../images/park/hero.jpg') no-repeat; background-size:cover; background-position:center; position:relative;}
+.park-hero:before {content:'';background: linear-gradient(to top,#000, #121214 12.71%, rgba(0, 0, 0, 0) 100%); position: absolute; height: 25vh; width:100%;}
+.park-hero-content {position:absolute; text-align:center; transform: translate(-50%, -85%); top: 85%; left: 50%;}
+.tips-text { flex: 1 0 70%; padding: 10px 0;}
+.tips-thumbnail { margin-right: 15px;}
+.tips-thumbnail img {height:72px; width:74px}
+.tips-text h3 {margin:0; font-size: 1.5rem; text-align:left; padding-top:0;}
+.tips-categories.flex-container {flex-wrap:nowrap; flex-direction:column; margin-bottom:5px;}
+.alerts {width:100%; background-color: #F4F4F4;}
+#alertsId {padding:10px;}
+.caption-container {position: absolute; bottom: 0; color: #fff; background: rgba(0,0,0,.55); width: 100%; padding: 10px; font-size:1.6rem;}
+section.carousel {padding:0; margin-bottom:0;}
+.caption-container .caption-text {margin-bottom:0;}
+.contact-park ul {list-style:none;}
+.contact-park ul li label {font-weight:700; font-size: 1.6rem;}
+.contact-park ul li {font-size:1.4rem;}
+
+
+/********** Article CSS **********/
+.mycard {background-color: #fff; margin: 24px 10px; padding-top: 20px; padding-left: 4%; padding-right:4%; box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);}
+.mycard h1 {font-weight: 700; letter-spacing: -1px; margin-top: 10px;}
+.mycard ul li, .mycard ul li h3 {font-family: ‘Noto Serif’, serif;}
+.article-text p {font-family: ‘Noto Serif’, serif;}
+.small-text h4 {margin-top: 20px;}
+.small-text h4:nth-of-type(2) {margin-bottom:20px;}
+.article-text {font-size: 1.6rem; line-height: 33px;}
+.article-text p:last-of-type {padding-bottom:10px;}
+.mycard.promotion img {width:100%; padding: 24px;}
+aside .flex-container {justify-content:center;}
+aside {flex-basis:100%;}
+.max-width-boot {max-width: 1140px; margin: 0 auto;}
+.main-flex-container {justify-content:center;}
+aside .mycard {flex-basis:100%;}
+.flexcontainer-xl .main .mycard.details  {margin-bottom:0;}
+aside .mycard:first-child {margin-top: 0; margin-bottom: 12px;}
+
+
+/* XS Adjustments */
+@media screen and (max-width:540px) {
+    .tips-categories .flex-container {flex-wrap:nowrap;}
+    .activities .flex-item.flex-container {flex: 0 0 100%;}
+    .parks-list .flex-item.flex-container {flex: 0 0 45%;}
+    .bg-video {display:none;}
+   
+}
+
+/* SM Adjustments */
+@media screen and (min-width:540px) {
+    .activities .flex-item {flex: 0 0 75%;}
+    .activities .flex-item.flex-no1.flex-container {flex: 0 0 100%;}
+    .activities .flex-item.flex-container {flex: 0 0 50%; }
+    .parks-list .flex-item.flex-container {flex: 0 0 30%;}
+    .flex-no16 {margin: 0 auto; margin-bottom: 20px;}
+    aside .mycard.promotion {flex-basis: 55.55%; margin: 24px auto;}
+    
+}
+/* MD Adjustments */
+@media screen and (min-width: 768px) {
+    .first-section h1 {line-height: 41px;}
+    .tips-categories.flex-container {flex-wrap: wrap; flex-direction:row; justify-content:space-between;}
+    .tips-categories .flex-container {flex: 0 0 45%;}
+    .tips-categories hr {display:none;}
+    .tips-thumbnail img {height: unset; width:100%;}
+    .tips-thumbnail, .tips-text {width:100%; margin:0;}
+    section.carousel {padding: 0 10px;}
+    .park-hero:before {height: 35vh;}
+
+}
+/* LG Adjustments */
+@media screen and (min-width: 992px) {
+    .hero-section h1 {font-size: 3.6rem; line-height: 49px;}
+    .activities .flex-item:not(.flex-no7) {flex: 0 0 50%;}
+    .flex-item.flex-no7.flex-container {margin: 0 auto;}
+    .parks-list .flex-item.flex-container {flex: 0 0 22%;}
+    .flex-no16 {margin: 0;}
+    .tips-categories .flex-container {flex: 0 0 30%;}
+}
+/* XL Adjustments */
+@media screen and (min-width: 1200px) {
+    .first-section h1 {font-size: 4.8rem; line-height: 65px;}
+    .activities .flex-item.flex-container {flex: 0 0 33%;}
+    .activities .flex-item.flex-no1.flex-container {flex: 0 0 33%;}
+    .flex-container.activities {max-width:1140px; margin: 0 auto;}
+    .parks-list {max-width:1140px; margin: 0 auto;}
+    section.carousel {margin:0 auto;}
+    .flexcontainer-xl .main {flex: 0 0 75%;}
+    .flexcontainer-xl aside {flex: 0 0 25%;}
+    .bg-video {display:block; position:absolute; top:0;}
+    .flexcontainer-xl aside {display:block; margin-top:24px;}
+    aside .mycard.promotion {flex-basis: 100%; max-height: 250px; margin: 24px 10px;}
+    .mycard.promotion img {padding: 0;}
+    .park-hero:before {height:50vh;}
+    .flexcontainer-xl .main {margin-bottom:24px; }
+}
+
+
+
+
+
